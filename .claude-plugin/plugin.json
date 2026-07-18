@@ -1,0 +1,21 @@
+{
+  "name": "course-upgrader",
+  "version": "0.1.0",
+  "description": "Compares a candidate's resume against real, live course listings (Coursera, Udemy, edX, Simplilearn, Great Learning, Google Digital Garage) to find courses that teach genuinely new skills instead of redundant ones. Computes an Overlap Rate, Skill Delta, and personalized Match Score for every recommendation.",
+  "author": {
+    "name": "Course Upgrader Contributors"
+  },
+  "license": "MIT",
+  "keywords": [
+    "career",
+    "resume",
+    "courses",
+    "upskilling",
+    "learning",
+    "job-search",
+    "education",
+    "coursera",
+    "udemy"
+  ],
+  "skills": "./skills"
+}

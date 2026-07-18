@@ -1,0 +1,23 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "course-upgrader",
+  "description": "Marketplace for the Course Upgrader plugin — an AI agent that audits a resume against real course listings to find courses teaching genuinely new skills instead of redundant ones.",
+  "owner": {
+    "name": "Course Upgrader Contributors"
+  },
+  "plugins": [
+    {
+      "name": "course-upgrader",
+      "source": "./",
+      "description": "Compares a candidate's resume against real course listings (Coursera, Udemy, edX, Simplilearn, Great Learning, Google Digital Garage) to compute an Overlap Rate, Skill Delta, and Match Score for every recommendation.",
+      "version": "0.1.0",
+      "author": {
+        "name": "Course Upgrader Contributors"
+      },
+      "license": "MIT",
+      "keywords": ["career", "resume", "courses", "upskilling", "learning", "job-search"],
+      "category": "productivity",
+      "strict": false
+    }
+  ]
+}

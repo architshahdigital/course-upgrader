@@ -1,0 +1,6 @@
+Jane Doe
+Senior Data Analyst
+
+Experience: 4 years in data analysis using Python, SQL, and Tableau.
+Skills: pandas, numpy, scikit-learn, Excel, PowerBI, statistics.
+Education: B.S. Computer Science, State University.
