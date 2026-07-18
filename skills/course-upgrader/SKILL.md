@@ -7,6 +7,21 @@ description: Audits a candidate's resume against real, live course listings on C
 
 Stops the user from wasting time and money on redundant courses. This skill wraps the `course-upgrader` Python CLI, which parses a resume, searches real course listings, and runs an LLM-driven overlap analysis for each course: **Overlap Rate** (% already known), **Skill Delta** (specific new tools/concepts gained), and a personalized **Match Score** (0-100).
 
+## Fallback: Running in Cloud/Web Environments (e.g., Claude.ai, CoWork, Custom Prompt)
+
+If you are running in a cloud or web-based chat environment (such as the Claude.ai web app or CoWork) where terminal/bash access is unavailable, do NOT attempt to run setup checks or CLI commands. Instead, perform the course upgrade analysis manually directly within your conversation context using these instructions:
+
+1. **Ingest Candidate Profile:** Parse the candidate's uploaded resume (or pasted text) to extract their name, current skills, specific tools/libraries/frameworks, and career goals.
+2. **Discover Courses (Web Search):** Use your built-in web search/browsing capabilities (or ask the user to provide course URLs/syllabi) to search Coursera, Udemy, edX, Simplilearn, Great Learning, and Google Digital Garage for course listings relevant to the goal.
+3. **Evaluate Overlap & Delta (In-Context):** Compare each course's content/syllabus against the candidate's profile:
+   - Compute the **Overlap Rate (%)** (how much of the course they already know).
+   - Identify the **Skill Delta** (specific new tools/concepts/frameworks they will gain).
+   - Estimate a personalized **Match Score (0-100)** based on goal relevance.
+   - Assign a **Verdict** (`highly_recommended`, `recommended`, `partial_overlap`, or `redundant`).
+4. **Present Recommendations:** Group, rank, and present the recommendations (free vs. paid) in a clean markdown format as described in **Workflow 1 (Step 5)** or **Workflow 2 (Step 3)**.
+
+---
+
 ## Setup check (do this once per session, before the first run)
 
 Determine where the `course-upgrader` CLI lives, trying each of these in order:
